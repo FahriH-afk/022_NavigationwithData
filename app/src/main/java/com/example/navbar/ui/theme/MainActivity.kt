@@ -1,4 +1,4 @@
-package com.example.navbar
+package com.example.navbar.ui.theme
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    EsJumboApp()
                 }
             }
         }
