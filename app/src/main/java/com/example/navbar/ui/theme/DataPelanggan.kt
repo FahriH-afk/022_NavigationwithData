@@ -47,6 +47,20 @@ fun DataPelanggan(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(15.dp))
+        OutlinedTextField(
+            value =  noTelepon,
+            onValueChange = {noTelepon = it},
+            label = { Text(text = "Nomor Telepon")},
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(15.dp))
+        OutlinedTextField(
+            value =  alamat,
+            onValueChange = {alamat = it},
+            label = { Text(text = "Alamat")},
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(15.dp))
     }
 
 }
