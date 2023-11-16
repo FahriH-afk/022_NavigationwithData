@@ -75,8 +75,15 @@ fun DataPelanggan(
             verticalAlignment = Alignment.Bottom) {
 
             OutlinedButton(
+                modifier = Modifier,
                 onClick = onCancelButtonClicked) {
                 Text(text = stringResource(id = R.string.cancel))
+            }
+            Spacer(modifier = Modifier.padding(16.dp))
+            OutlinedButton(
+                modifier = Modifier,
+                onClick = {onSubmitButtonClicked(listData)}) {
+                Text(text = stringResource(id = R.string.btn_submit))
             }
         }
     }
