@@ -86,7 +86,7 @@ fun EsJumboApp (
             composable(route = PengelolaHalaman.Rasa.name) {
                 val context = LocalContext.current
                 HalamanSatu (
-                    pilihanRasa = flavors.map {  -> context.resources.getString(id) },
+                    pilihanRasa = flavors.map { id -> context.resources.getString(id) },
                     onSelectionChanged = { viewModel.setRasa(it) },
                     onConfirmedButtonClicked = {viewModel.setJumlah(it) },
                     onNextButtonClicked = {navController.navigate(PengelolaHalaman.Summary.name)
